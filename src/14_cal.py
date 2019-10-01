@@ -22,3 +22,11 @@ and does the following:
 import sys
 import calendar
 from datetime import datetime
+
+def cal(month = datetime.now().month, year = datetime.now().year):
+  print(calendar.month(year, month))
+
+year = int(input("Enter a year (as number): "))
+month = int(input("Enter a month (as number): "))
+
+cal(month, year)
